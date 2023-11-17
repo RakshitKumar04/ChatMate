@@ -1,7 +1,6 @@
 syntax="proto3";
 package pb;
 import "user.proto";
-
 option go_package="github.com/RakshitKumar04/ChatMate/tree/master/pb";
 
 message GetUserResponse{

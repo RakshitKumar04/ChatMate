@@ -3,7 +3,6 @@ package pb;
 import "user.proto";
 option go_package="github.com/RakshitKumar04/ChatMate/tree/master/pb";
 
-
 message LoginRequestMessage{
     string username=1;
     string password=2;
