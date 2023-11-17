@@ -2,7 +2,7 @@ syntax="proto3";
 package pb;
 import "user.proto";
 
-option go_package="github.com/djsmk123/server/pb";
+option go_package="github.com/RakshitKumar04/ChatMate/tree/master/pb";
 
 message GetUserResponse{
     User user=1;
