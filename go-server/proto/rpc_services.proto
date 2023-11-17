@@ -1,6 +1,6 @@
 syntax="proto3";
 package pb;
-option go_package="github.com/RakshitKumar04/ChatMate/tree/master/pb";
+option go_package="github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb";
 import "empty_request.proto";
 import "rpc_get_user.proto";
 import "rpc_login.proto";
@@ -8,10 +8,10 @@ import "rpc_signup.proto";
 
 service GrpcServerService {
     rpc SignUp(SignupRequestMessage) returns (SignupResponseMessage){};
-
     rpc login(LoginRequestMessage) returns (LoginResponseMessage){};
     rpc GetUser(EmptyRequest) returns (GetUserResponse) {};
 }
+
 message EmptyRequest{
 
 }

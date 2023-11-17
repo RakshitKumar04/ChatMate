@@ -1,7 +1,6 @@
 syntax = "proto3";
-
 package pb;
-option go_package="github.com/djsmk123/server/pb";
+option go_package="github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb";
 
 message User{
     int32 id=1;

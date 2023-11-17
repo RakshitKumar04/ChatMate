@@ -1,5 +1,4 @@
 package token
-
 import "time"
 
 type Maker interface {

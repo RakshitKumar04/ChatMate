@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"time"
-
 	"github.com/dgrijalva/jwt-go"
 )
 
@@ -22,6 +21,7 @@ func NewJwtMaker(secret string) (*JwtMaker, error) {
 		secret: secret,
 	}, nil
 }
+
 func (maker *JwtMaker) CreateToken(id int64, username string, duration time.Duration) (string, error) {
 	payload, err := NewPayLoad(id, username, duration)
 	if err != nil {

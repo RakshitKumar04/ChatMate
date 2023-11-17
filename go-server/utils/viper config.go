@@ -2,7 +2,6 @@ package utils
 
 import (
 	"time"
-
 	"github.com/spf13/viper"
 )
 
@@ -27,5 +26,4 @@ func LoadConfiguration(path string) (config ViperConfig, err error) {
 	}
 	err = viper.Unmarshal(&config)
 	return
-
 }
