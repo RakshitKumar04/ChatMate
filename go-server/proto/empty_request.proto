@@ -1,0 +1,5 @@
+syntax="proto3";
+package pb;
+option go_package="github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb";
+
+    
