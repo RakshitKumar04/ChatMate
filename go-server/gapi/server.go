@@ -7,7 +7,6 @@ import (
 	"github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb"
 	"github.com/RakshitKumar04/ChatMate/tree/master/go-server/token"
 	"github.com/RakshitKumar04/ChatMate/tree/master/go-server/utils"
-	"google.golang.org/grpc/status"
 )
 
 type Server struct {
