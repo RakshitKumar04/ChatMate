@@ -1,4 +1,4 @@
-module ChatMate
+module github.com/RakshitKumar04/ChatMate
 
 go 1.20
 
