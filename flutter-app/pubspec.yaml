@@ -1,4 +1,0 @@
-name: flutter-app
-shared_preferences: ^2.2.1
-protobuf: ^3.1.0
-grpc: ^3.2.3
