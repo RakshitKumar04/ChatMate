@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb"
-	"github.com/djsmk123/server/services"
+	"github.com/RakshitKumar04/ChatMate/tree/master/go-server/services"
 )
 
 // GetNotifications is a gRPC service method that streams notifications to the client.
