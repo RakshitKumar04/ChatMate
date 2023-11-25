@@ -1,17 +1,16 @@
 syntax="proto3";
 package pb;
 option go_package="github.com/RakshitKumar04/ChatMate/tree/master/go-server/pb";
-import "empty_request.proto";
-import "rpc_get_user.proto";
-import "rpc_login.proto";
-import "rpc_signup.proto";
+import "/home/kumar0402/Code/VSCode/ChatMate/go-server/proto/empty_request.proto";
+import "/home/kumar0402/Code/VSCode/ChatMate/go-server/proto/rpc_get_user.proto";
+import "/home/kumar0402/Code/VSCode/ChatMate/go-server/proto/rpc_login.proto";
+import "/home/kumar0402/Code/VSCode/ChatMate/go-server/proto/rpc_signup.proto";
+import "/home/kumar0402/Code/VSCode/ChatMate/go-server/proto/rpc_notifications.proto";
+
 
 service GrpcServerService {
     rpc SignUp(SignupRequestMessage) returns (SignupResponseMessage){};
     rpc login(LoginRequestMessage) returns (LoginResponseMessage){};
     rpc GetUser(EmptyRequest) returns (GetUserResponse) {};
-}
-
-message EmptyRequest{
-
+    rpc GetNotifications(EmptyRequest) returns (stream NotificationMessage){}
 }
